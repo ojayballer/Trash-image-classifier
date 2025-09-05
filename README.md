@@ -42,14 +42,10 @@ Glass → 2%
 ## 📂 Repository Structure
 ```
 📦 trash-classifier
- ┣ 📂 data/                # Training & testing images (not included in repo)
  ┣ 📂 examples/            # Example input images + predictions
- ┣ 📂 notebooks/           # Jupyter notebooks for training & experiments
+ ┣ 📂 training code/           # python script  for training & experiments
  ┣ 📂 app/                 # Flask web app
  ┃ ┣ app.py
- ┃ ┣ static/
- ┃ ┗ templates/
- ┣ requirements.txt        # Dependencies
  ┣ README.md               # Project documentation
  ┗ LICENSE
 ```
