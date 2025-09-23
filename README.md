@@ -117,9 +117,3 @@ Thanks to the open-source community 💙
 🏷️ License
 This project is licensed under the MIT License — free to use and modify.
 
-
-
-
-
-
-ChatGPT can make mistakes. Check important info.
