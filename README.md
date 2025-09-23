@@ -21,8 +21,8 @@ pip install -r requirements.txt
 python app.py
 
 
-Then open http://127.0.0.1:5000/
- in your browser.
+Then open:
+👉 http://127.0.0.1:5000/
 
 📖 Project Overview
 
@@ -31,27 +31,25 @@ I wanted to see how far I could go with classical machine learning techniques.
 
 With careful data preprocessing, feature engineering, and insights from 20+ research papers, I achieved:
 
-✅ 76% accuracy (previous benchmark was 67%)
-✅ Ability to recognize multiple items in one image (e.g., paper + metal)
-✅ A fully working web app deployed with Flask on Render
+✅ 76% accuracy (previous benchmark: 67%)
+✅ Ability to recognize multiple items in a single image (e.g., paper + metal)
+✅ Fully deployed as a Flask web application on Render
 
 📊 Results
 
 Benchmark exceeded: 76% vs 67%
 Generalization: Handles mixed waste images effectively
-Robustness: Fixed data leakage issues and optimized preprocessing
+Robustness: Debugged data leakage and optimized preprocessing
 
 Example prediction (mixed objects):
 
-Metal → 71%
+Metal   → 71%
+Paper   → 62%
+Plastic →  5%
+Glass   →  2%
 
-Paper → 62%
 
-Plastic → 5%
-
-Glass → 2%
-
-✔ Correctly identifies both Metal + Paper
+✔ Correctly identifies both Metal and Paper
 
 ⚙️ Tech Stack
 
@@ -73,27 +71,28 @@ Trash-image-classifier/
 │── LICENSE
 
 🧠 Methodology
+🔹 Data Preprocessing
+• Converted to grayscale
+• Resized to 64×64
+• Normalized pixel values
 
-Data Preprocessing
-Images were converted to grayscale, resized to 64×64, and normalized.
+🔹 Feature Engineering
+• HOG → edge and orientation features
+• LBP → texture patterns
+• GLCM → spatial properties (contrast, homogeneity, correlation)
 
-Feature Engineering
 
-HOG (edges and orientations)
+Final feature vector = HOG + LBP + GLCM
 
-LBP (texture features)
+🔹 Model Training
+• Tried SVM, Random Forest, Logistic Regression
+• Selected the best-performing model
+• Saved using joblib
 
-GLCM (spatial properties: contrast, homogeneity, correlation)
-
-Combined into a single feature vector
-
-Model Training
-Tried SVM, Random Forest, Logistic Regression.
-Selected the best performing model and saved it with joblib.
-
-Evaluation
-Achieved 76% accuracy (compared to 67% benchmark).
-Validated on images with multiple waste items.
+🔹 Evaluation
+• Achieved 76% accuracy (vs 67% benchmark)
+• Robust against data leakage
+• Validated on mixed-object images
 
 🌍 Real-World Impact
 
@@ -102,8 +101,10 @@ This project shows how AI (even without deep learning) can power automated recyc
 
 🙌 Acknowledgments
 
-Inspired by 20+ research papers on trash classification.
-Dataset: Kaggle TrashNet.
+Inspired by 20+ research papers on trash classification
+
+Dataset: Kaggle TrashNet
+
 Thanks to the open-source community 💙
 
 🏷️ License
