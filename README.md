@@ -22,44 +22,53 @@ source venv/bin/activate   # Linux/Mac
 venv\Scripts\activate      # Windows
 pip install -r requirements.txt
 python app.py
-Then open http://127.0.0.1:5000/ in your browser.
+```   <-- THIS closes the code block ✅
 
-📖 Project Overview
-Most research uses deep learning (CNNs) for image classification.
-I wanted to see how far I could go with classical machine learning techniques.
+Then open [http://127.0.0.1:5000/](http://127.0.0.1:5000/) in your browser.
 
-With careful data preprocessing, feature engineering, and insights from 20+ research papers, I achieved:
+---
 
-✅ 76% accuracy (previous benchmark was 67%)
-✅ Ability to recognize multiple items in one image (e.g., paper + metal)
-✅ A fully working web app deployed with Flask on Render
+## 📖 Project Overview
 
-📊 Results
-Benchmark exceeded: 76% vs 67%
-Generalization: Handles mixed waste images effectively
-Robustness: Fixed data leakage issues and optimized preprocessing
+Most research uses **deep learning (CNNs)** for image classification.  
+I wanted to see how far I could go with **classical machine learning techniques**.
 
-Example prediction (mixed objects):
+With careful data preprocessing, feature engineering, and insights from **20+ research papers**, I achieved:
 
-Metal → 71%
+✅ 76% accuracy (previous benchmark was 67%)  
+✅ Ability to recognize multiple items in one image (e.g., paper + metal)  
+✅ A fully working web app deployed with Flask on Render  
 
-Paper → 62%
+---
 
-Plastic → 5%
+## 📊 Results
 
-Glass → 2%
+**Benchmark exceeded:** 76% vs 67%  
+**Generalization:** Handles mixed waste images effectively  
+**Robustness:** Fixed data leakage issues and optimized preprocessing  
 
-✔ Correctly identifies both Metal + Paper
+**Example prediction (mixed objects):**  
+- Metal → 71%  
+- Paper → 62%  
+- Plastic → 5%  
+- Glass → 2%  
 
-⚙️ Tech Stack
-Language: Python
-Libraries: scikit-learn, scikit-image, NumPy, Pillow, Flask
-Dataset: Kaggle TrashNet and similar datasets
-Deployment: Flask app hosted on Render
+✔ Correctly identifies both **Metal + Paper**
 
-📂 Repository Structure
-bash
-Copy code
+---
+
+## ⚙️ Tech Stack
+
+**Language:** Python  
+**Libraries:** scikit-learn, scikit-image, NumPy, Pillow, Flask  
+**Dataset:** Kaggle TrashNet and similar datasets  
+**Deployment:** Flask app hosted on Render  
+
+---
+
+## 📂 Repository Structure
+
+```bash
 Trash-image-classifier/
 │── app.py                   # Flask web app
 │── Recycling_project.joblib # Saved ML model
@@ -70,50 +79,49 @@ Trash-image-classifier/
 │── examples/                # Example images
 │── training/                # Training scripts
 │── LICENSE
-🧠 Methodology
-Data Preprocessing
+```   <-- THIS closes the code block ✅
 
-Images converted to grayscale
+---
 
-Resized to 64×64
+## 🧠 Methodology
 
-Normalized pixel values
+**Data Preprocessing**  
+- Images converted to grayscale  
+- Resized to 64×64  
+- Normalized pixel values  
 
-Feature Engineering
+**Feature Engineering**  
+- HOG (edges and orientations)  
+- LBP (texture features)  
+- GLCM (spatial properties: contrast, homogeneity, correlation)  
+- Combined into a single feature vector  
 
-HOG (edges and orientations)
+**Model Training**  
+- Tried SVM, Random Forest, Logistic Regression  
+- Selected the best performing model  
+- Saved model using joblib  
 
-LBP (texture features)
+**Evaluation**  
+- 76% accuracy (compared to 67% benchmark)  
+- Validated on images with multiple waste items  
 
-GLCM (spatial properties: contrast, homogeneity, correlation)
+---
 
-Combined into a single feature vector
+## 🌍 Real-World Impact
 
-Model Training
+Waste management is a **global challenge**.  
+This project shows how AI (even without deep learning) can power **automated recycling systems** — detecting and sorting waste more efficiently.
 
-Tried SVM, Random Forest, Logistic Regression
+---
 
-Selected the best performing model
+## 🙌 Acknowledgments
 
-Saved model using joblib
+- Inspired by 20+ research papers on trash classification  
+- Dataset: Kaggle TrashNet  
+- Thanks to the open-source community 💙  
 
-Evaluation
+---
 
-76% accuracy (compared to 67% benchmark)
+## 🏷️ License
 
-Validated on images with multiple waste items
-
-🌍 Real-World Impact
-Waste management is a global challenge.
-This project shows how AI (even without deep learning) can power automated recycling systems — detecting and sorting waste more efficiently.
-
-🙌 Acknowledgments
-Inspired by 20+ research papers on trash classification
-
-Dataset: Kaggle TrashNet
-
-Thanks to the open-source community 💙
-
-🏷️ License
-This project is licensed under the MIT License — free to use and modify.
-
+This project is licensed under the **MIT License** — free to use and modify.
