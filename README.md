@@ -1,20 +1,17 @@
-# 🗑️ Trash Classifier — Classical Machine Learning Approach
+🗑️ Trash Classifier — Classical Machine Learning Approach
 
-Can classical machine learning compete with deep learning in image classification?  
+Can classical machine learning compete with deep learning in image classification?
 I set out to prove that it can. This project is a trash classification system (plastic, paper, glass, metal) built entirely with classical ML techniques — no deep learning.
 
----
-
-## 🚀 Live Demo
+🚀 Live Demo
 
 You can try the project in two ways:
 
-**Option 1: Run in your browser (no setup required).**  
-👉 [Click here to use the Trash Classifier on Render](https://trash-image-classifier.onrender.com)  
+Option 1: Run in your browser (no setup required).
+👉 Click here to use the Trash Classifier on Render
 
-**Option 2: Run it locally.**  
+Option 2: Run it locally.
 
-```bash
 git clone https://github.com/ojayballer/Trash-image-classifier.git
 cd Trash-image-classifier
 python -m venv venv
@@ -22,9 +19,13 @@ source venv/bin/activate   # Linux/Mac
 venv\Scripts\activate      # Windows
 pip install -r requirements.txt
 python app.py
-Then open http://127.0.0.1:5000/ in your browser.
+
+
+Then open http://127.0.0.1:5000/
+ in your browser.
 
 📖 Project Overview
+
 Most research uses deep learning (CNNs) for image classification.
 I wanted to see how far I could go with classical machine learning techniques.
 
@@ -35,6 +36,7 @@ With careful data preprocessing, feature engineering, and insights from over 20 
 ✅ A fully working web app deployed with Flask on Render
 
 📊 Results
+
 Benchmark exceeded: 76% compared to 67%
 Generalization: Works on mixed waste images
 Robustness: Fixed data leakage issues and optimized preprocessing
@@ -47,12 +49,14 @@ Glass → 2%
 ✔ Correctly identifies both Metal and Paper
 
 ⚙️ Tech Stack
+
 Language used: Python
 Libraries: scikit-learn, scikit-image, NumPy, Pillow, Flask
 Dataset: TrashNet and similar Kaggle datasets
 Deployment: Flask web app hosted on Render
 
 📂 Repository Structure
+
 Trash-image-classifier/
 │── app.py (Flask web app)
 │── Recycling_project.joblib (Saved ML model)
@@ -65,6 +69,7 @@ Trash-image-classifier/
 │── LICENSE
 
 🧠 Methodology
+
 Data Preprocessing
 Images were converted to grayscale, resized to 64×64, and normalized.
 
@@ -83,18 +88,16 @@ The model achieved 76% accuracy compared to the 67% benchmark reported in earlie
 It was also validated on images containing multiple waste items.
 
 🌍 Real-World Impact
+
 Waste management is a global problem.
 This project shows that even without deep learning, AI can support automated recycling systems and make waste sorting more efficient.
 
 🙌 Acknowledgments
+
 Inspired by over 20 research papers on trash classification.
 Dataset: Kaggle TrashNet.
 Thanks to the open-source community for tools and support.
 
 🏷️ License
+
 This project is licensed under the MIT License, free to use and modify.
-
-yaml
-Copy code
-
----
