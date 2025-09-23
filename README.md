@@ -1,17 +1,20 @@
-🗑️ Trash Classifier — Classical Machine Learning Approach
+# 🗑️ Trash Classifier — Classical Machine Learning Approach
 
-Can classical machine learning compete with deep learning in image classification?
-I set out to prove that it can. This project is a trash classification system (plastic, paper, glass, metal) built entirely with classical ML techniques — no deep learning.
+Can classical machine learning compete with deep learning in image classification?  
+I set out to prove that it can. This project is a **trash classification system** (plastic, paper, glass, metal) built entirely with **classical ML techniques** — no deep learning.
 
-🚀 Live Demo
+---
+
+## 🚀 Live Demo
 
 You can try the project in two ways:
 
-Option 1: Run in your browser (no setup required).
-👉 Click here to use the Trash Classifier on Render
+**Option 1: Run in your browser (no setup required)**  
+👉 [Trash Classifier on Render](https://trash-image-classifier.onrender.com)  
 
-Option 2: Run it locally.
+**Option 2: Run it locally**
 
+```bash
 git clone https://github.com/ojayballer/Trash-image-classifier.git
 cd Trash-image-classifier
 python -m venv venv
@@ -19,85 +22,104 @@ source venv/bin/activate   # Linux/Mac
 venv\Scripts\activate      # Windows
 pip install -r requirements.txt
 python app.py
-
-
-Then open http://127.0.0.1:5000/
- in your browser.
+Then open http://127.0.0.1:5000/ in your browser.
 
 📖 Project Overview
-
 Most research uses deep learning (CNNs) for image classification.
 I wanted to see how far I could go with classical machine learning techniques.
 
-With careful data preprocessing, feature engineering, and insights from over 20 research papers, I achieved:
+With careful data preprocessing, feature engineering, and insights from 20+ research papers, I achieved:
 
 ✅ 76% accuracy (previous benchmark was 67%)
-✅ Ability to recognize multiple items in one image (for example paper and metal together)
+✅ Ability to recognize multiple items in one image (e.g., paper + metal)
 ✅ A fully working web app deployed with Flask on Render
 
 📊 Results
-
-Benchmark exceeded: 76% compared to 67%
-Generalization: Works on mixed waste images
+Benchmark exceeded: 76% vs 67%
+Generalization: Handles mixed waste images effectively
 Robustness: Fixed data leakage issues and optimized preprocessing
 
 Example prediction (mixed objects):
+
 Metal → 71%
+
 Paper → 62%
+
 Plastic → 5%
+
 Glass → 2%
-✔ Correctly identifies both Metal and Paper
+
+✔ Correctly identifies both Metal + Paper
 
 ⚙️ Tech Stack
-
-Language used: Python
+Language: Python
 Libraries: scikit-learn, scikit-image, NumPy, Pillow, Flask
-Dataset: TrashNet and similar Kaggle datasets
-Deployment: Flask web app hosted on Render
+Dataset: Kaggle TrashNet and similar datasets
+Deployment: Flask app hosted on Render
 
 📂 Repository Structure
-
+bash
+Copy code
 Trash-image-classifier/
-│── app.py (Flask web app)
-│── Recycling_project.joblib (Saved ML model)
-│── requirements.txt (Dependencies)
-│── Procfile (Render deploy config)
-│── runtime.txt (Python version)
-│── README.md (Project documentation)
-│── examples/ (Example images)
-│── training/ (Training scripts)
+│── app.py                   # Flask web app
+│── Recycling_project.joblib # Saved ML model
+│── requirements.txt         # Dependencies
+│── Procfile                 # Render deploy config
+│── runtime.txt              # Python version
+│── README.md                # Project documentation
+│── examples/                # Example images
+│── training/                # Training scripts
 │── LICENSE
-
 🧠 Methodology
-
 Data Preprocessing
-Images were converted to grayscale, resized to 64×64, and normalized.
+
+Images converted to grayscale
+
+Resized to 64×64
+
+Normalized pixel values
 
 Feature Engineering
-Histogram of Oriented Gradients captured edges and orientations.
-Local Binary Patterns captured textures.
-Gray-Level Co-occurrence Matrix captured spatial properties like contrast, homogeneity, and correlation.
-The final feature vector was a combination of HOG, LBP, and GLCM.
+
+HOG (edges and orientations)
+
+LBP (texture features)
+
+GLCM (spatial properties: contrast, homogeneity, correlation)
+
+Combined into a single feature vector
 
 Model Training
-Several classical algorithms such as Support Vector Machines, Random Forest, and Logistic Regression were tested.
-The best performing model was selected and saved with joblib.
+
+Tried SVM, Random Forest, Logistic Regression
+
+Selected the best performing model
+
+Saved model using joblib
 
 Evaluation
-The model achieved 76% accuracy compared to the 67% benchmark reported in earlier work.
-It was also validated on images containing multiple waste items.
+
+76% accuracy (compared to 67% benchmark)
+
+Validated on images with multiple waste items
 
 🌍 Real-World Impact
-
-Waste management is a global problem.
-This project shows that even without deep learning, AI can support automated recycling systems and make waste sorting more efficient.
+Waste management is a global challenge.
+This project shows how AI (even without deep learning) can power automated recycling systems — detecting and sorting waste more efficiently.
 
 🙌 Acknowledgments
+Inspired by 20+ research papers on trash classification
 
-Inspired by over 20 research papers on trash classification.
-Dataset: Kaggle TrashNet.
-Thanks to the open-source community for tools and support.
+Dataset: Kaggle TrashNet
+
+Thanks to the open-source community 💙
 
 🏷️ License
+This project is licensed under the MIT License — free to use and modify.
 
-This project is licensed under the MIT License, free to use and modify.
+
+
+
+
+
+ChatGPT can make mistakes. Check important info.
