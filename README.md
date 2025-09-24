@@ -5,7 +5,7 @@ A machine learning web app that classifies trash into **plastic, paper, glass, o
 Deployed with Flask on Render.  
 ```
 ## 🚀 Installation and Live Demo
-nstallation / Run Locally
+
 ## 💻 Run Locally
 
 Clone the repo:
