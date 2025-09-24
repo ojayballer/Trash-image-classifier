@@ -62,10 +62,10 @@ Deployment: Flask + Render
 
 
 ### Web App Interface
-![Web App Interface](examples/Screenshot (1678).png)
+![Web App Interface](examples/Screenshot%20%281678%29.png)
 
 ### Example Prediction
-![Prediction Example](examples/Screenshot (1678).png)
+![Prediction Example](examples/Screenshot%20%281679%29.png)
 
 ## 🧠 Methodology
 
