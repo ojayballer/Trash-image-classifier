@@ -49,11 +49,12 @@ Upload a **.jpg image** of trash (e.g., bottle, newspaper, soda can) and the mod
 ✅ Robust preprocessing and optimized feature extraction  
 ```
 ## ⚙️ Tech Stack  
-
+```bash
 Language: Python
 Libraries: scikit-learn, scikit-image, NumPy, Pillow, Flask
 Dataset: TrashNet & similar Kaggle datasets
 Deployment: Flask + Render
+```
 ##  🖼️ Sample UI  
 
 
