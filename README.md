@@ -1,8 +1,4 @@
 
-# Project Title
-
-A brief description of what this project does and who it's for
-
 # 🗑️ Trash Classifier — Classical Machine Learning Approach
 ```bash
 A machine learning web app that classifies trash into **plastic, paper, glass, or metal** using classical ML techniques (no deep learning).  
