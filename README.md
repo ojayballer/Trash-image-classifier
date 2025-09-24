@@ -34,7 +34,7 @@ Open in browser:
 ```bash
 👉 http://127.0.0.1:5000/
 ```
-Live Demo
+## Live Demo
 ```bash
 👉 Try it online: [Trash Classifier on Render](https://trash-image-classifier.onrender.com)  
 
