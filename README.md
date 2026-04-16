@@ -35,11 +35,11 @@ Open in browser:
 👉 http://127.0.0.1:5000/
 ```
 ## Live Demo
-```bash
+
 👉 Try it online: [Trash Classifier on Render](https://trash-image-classifier.onrender.com)  
 
 Upload a **.jpg image** of trash (e.g., bottle, newspaper, soda can) and the model will predict its category in real time
-```
+
 
 ## Features
 ```bash
