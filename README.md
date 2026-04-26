@@ -6,7 +6,7 @@ Deployed with Flask on Render.
 ```
 ## Installation and Live Demo
 
-## 💻 Run Locally
+##  Run Locally
 
 Clone the repo:
 ```bash
