@@ -1,10 +1,10 @@
 
-# 🗑️ Trash Classifier — Classical Machine Learning Approach
+**Trash Classifier :Classical Machine Learning Approach**
 ```bash
 A machine learning web app that classifies trash into **plastic, paper, glass, or metal** using classical ML techniques (no deep learning).  
 Deployed with Flask on Render.  
 ```
-## 🚀 Installation and Live Demo
+## Installation and Live Demo
 
 ## 💻 Run Locally
 
@@ -32,30 +32,30 @@ python app.py
 
 Open in browser:
 ```bash
-👉 http://127.0.0.1:5000/
+ http://127.0.0.1:5000/
 ```
 ## Live Demo
 
-👉 Try it online: [Trash Classifier on Render](https://trash-image-classifier.onrender.com)  
+ Try it online: [Trash Classifier on Render](https://trash-image-classifier.onrender.com)  
 
 Upload a **.jpg image** of trash (e.g., bottle, newspaper, soda can) and the model will predict its category in real time
 
 
 ## Features
 ```bash
-✅ 76% accuracy (benchmark was 67%)  
-✅ Can detect multiple items in one image (e.g., paper + metal together)  
-✅ Fully deployed as a Flask web app on Render  
-✅ Robust preprocessing and optimized feature extraction  
+ 76% accuracy (benchmark was 67%)  
+ Can detect multiple items in one image (e.g., paper + metal together)  
+Fully deployed as a Flask web app on Render  
+ Robust preprocessing and optimized feature extraction  
 ```
-## ⚙️ Tech Stack  
+##  Tech Stack  
 ```bash
 Language: Python
 Libraries: scikit-learn, scikit-image, NumPy, Pillow, Flask
 Dataset: TrashNet & similar Kaggle datasets
 Deployment: Flask + Render
 ```
-##  🖼️ Sample UI  
+##   Sample UI  
 
 
 ### Web App Interface
@@ -64,7 +64,7 @@ Deployment: Flask + Render
 ### Example Prediction
 ![Prediction Example](examples/Screenshot%20%281679%29.png)
 
-## 🧠 Methodology
+##  Methodology
 
 
 ```bash
@@ -100,20 +100,10 @@ Achieved 76% accuracy (benchmark was 67%)
 
 Works with images containing multiple objects
 ```
-## 🌍 Real-World Impact
-```bash
-Waste management is a global challenge.
-This project shows how AI — even classical ML without deep learning — can help automate recycling systems by detecting and sorting waste more efficiently.
-```
-## 🙌 Acknowledgments
-```bash
-Inspired by 20+ research papers on trash classification
 
-Dataset: Kaggle TrashNet
 
-Thanks to the open-source community 💙
-```
+
 ## 🏷️ License
 ```bash
-This project is licensed under the MIT License — free to use and modify
+This project is licensed under the MIT License , free to use and modify
 ```
