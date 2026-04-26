@@ -103,7 +103,7 @@ Works with images containing multiple objects
 
 
 
-## 🏷️ License
+##  License
 ```bash
 This project is licensed under the MIT License , free to use and modify
 ```
