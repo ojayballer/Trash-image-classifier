@@ -42,14 +42,14 @@ Upload a **.jpg image** of trash (e.g., bottle, newspaper, soda can) and the mod
 
 
 ## Features
-```bash
+
  76% accuracy (benchmark was 67%)  
  Can detect multiple items in one image (e.g., paper + metal together)  
 Fully deployed as a Flask web app on Render  
  Robust preprocessing and optimized feature extraction  
 ```
 ##  Tech Stack  
-```bash
+
 Language: Python
 Libraries: scikit-learn, scikit-image, NumPy, Pillow, Flask
 Dataset: TrashNet & similar Kaggle datasets
@@ -67,7 +67,7 @@ Deployment: Flask + Render
 ##  Methodology
 
 
-```bash
+
 Data Preprocessing
 
 Converted all images to grayscale
@@ -99,7 +99,7 @@ Evaluation
 Achieved 76% accuracy (benchmark was 67%)
 
 Works with images containing multiple objects
-```
+
 
 
 
